@@ -14,7 +14,7 @@ Sim_mem.cpp
 
 
 == private methods==
-Load - This function's goal is to load the current                                                                       page to the main memory. The function is divided into several cases. At each case I update physical address and return the main memory in the place of the physical address.
+Load - This function's goal is to load the current page to the main memory. The function is divided into several cases. At each case I update physical address and return the main memory in the place of the physical address.
 Store - This function's goal is to store the value to the page in the address. At each case, I calculate the physical address and update the value in the right place.
 placeInExe – This function gets a page, its frame and process id.  and enter the page to the main memory.
 notPlaceInExe - This function gets a page and check which frame I need to remove from the main memory, if the page has permission for writing and the page dirty, I copy the page to the swap file.
